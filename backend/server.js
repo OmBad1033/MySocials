@@ -6,12 +6,14 @@ import userRoutes from "./routes/userRoutes.js";
 import userPosts from "./routes/userPosts.js";
 import messageRoutes from "./routes/messageRoutes.js";
 import {app, server} from "./socket/socket.js";
+import job from "./cron/cron.js";
 
 import cookieParser from "cookie-parser";
 import {v2 as cloudinary} from "cloudinary";
 
 dotenv.config();
 connectDB();
+job.start();
 const PORT = process.env.PORT || 5000; 
 const __dirname = path.resolve();
 
