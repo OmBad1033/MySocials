@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.icon-container{
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.icon-container:hover{
+  background-color: rgb(87, 86, 86);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
